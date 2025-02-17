@@ -1,0 +1,226 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of YO  BOY LEMONADE. Explore the latest music, tour dates, and more.">
+    <title>YO  BOY LEMONADE - Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+	
+}
+
+/* Header */
+header {
+    background-color: #ee7708;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+	width: 100%;
+}
+
+
+
+header h1 {
+    font-size: 36px;
+}
+
+ nav ul {
+	 padding: 20px 0;
+    text-align: center;
+	background-color: #ff4b04;
+    list-style: none;
+}
+
+ nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+ nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Image */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    color: tomato;
+    padding: 0px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+	font-family: algerian;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+/* Music Section */
+.music-player {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Gallery Section */
+.gallery-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-grid img {
+    max-width: 30%;
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #ee7708;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+fieldset{
+	border:7pixs;
+	width: 50%
+}
+legend{ 
+	text-align: center;
+
+}
+</style>
+<body>
+  
+    <header>
+        <div class="container">
+            <h1>YO  BOY LEMONADE</h1>
+            
+        </div>
+    </header>
+<nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    <section id="home">
+        <div class="hero">
+            <img src="IMAGES/100.JPG" style="width:100%" style="height:50%"  alt="Musician performing on stage">
+            <h2>Welcome to YO  BOY LEMONADE's Official Website</h2>
+            <p>Explore the latest music, news, and tour updates.</p>
+        </div>
+    </section>
+
+   
+    <section id="about">
+        <h2>ABOUT YO  BOY LEMONADE</h2>
+        <p>Yo  Boy Lemonade is a [genre] artist known for his [signature style]. Born in [birthplace], he
+            began his journey in music at [age]. With a passion for [music genre], Yo  Boy Lemonade has released [number]
+            of albums, and he continues to make waves in the music scene today.</p>
+    </section>
+
+    
+    <section id="music">
+        <h2>Music</h2>
+        <p>Listen to Yo  Boy Lemonade's latest tracks:</p>
+       
+        <div class="music-player">
+            <iframe src="https://open.spotify.com/embed/album/[albumID]" width="300" height="380" frameborder="0"
+                allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <h3>Discography</h3>
+        <ul>
+            <li>Album 1 - [Release Year] - <a href="music/Dax_-__Dear_Alcohol___Remix__ft._Elle_King.mp3">Listen</a></li>
+            <li>Single 1 - [Release Year] -<a href="IMAGES/time.MP4" width="33%" height="40%"controls>Listen</a></li>
+            <li>Album 2 - [Release Year] - <a href="IMAGES/SORRY.MP4" width="33%" height="40%" controls>Listen</a></li>
+        </ul>
+    </section>
+   
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div >
+            <img src="IMAGES/1.JPG" width="33%" height="40%" alt="Studio recording">
+            <img src="IMAGES/6.JPG" width="33%" height="40%" alt="Studio recording">
+			<video src="IMAGES/time.MP4" width="33%" height="40%"controls></video>
+			<video src="IMAGES/SORRY.MP4" width="33%" height="40%" controls></video>
+        </div>
+        <p>More photos available on Yo  Boy Lemonade's social media.</p>
+    </section>
+				<a href="gallery.html">More photos</a>
+ 
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="/submit-form" method="POST">
+		
+		<fieldset> 
+				<legend><h3>For bookings or inquiries, reach out below:</h3></legend>
+			<label><b>Name:</b></label>
+            <input type="text" name="name" placeholder="Your Name" required>
+			<br/>
+			<label><b>Email:</b></label>
+            <input type="email" name="email" placeholder="Your Email" required>
+			<br/>
+			<label><b>Message:</b></label>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+			<br/>
+			<label><b>How did you get to hear about Yo  Boy Lemonade?</b></label>
+			<select>
+					<option>Friend</option>
+					<option>Internet</option>
+					<option>Community</option>
+					<option>Others</option>
+					
+			</select>
+					<br/>
+					<br/>
+		</fieldset>	
+			<br/>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Follow on social media:
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://instagram.com">Instagram</a> |
+            <a href="https://twitter.com">Twitter</a> |
+            <a href="https://Youtube.com">Youtube</a>
+        </p>
+    </section>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+   
+    <footer>
+        <p>&copy; 2024 YO  BOY LEMONADE. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
